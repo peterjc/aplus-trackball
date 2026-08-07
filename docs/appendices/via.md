@@ -1,0 +1,93 @@
+# Appendix F: Using VIA
+
+The A+ Trackball's keymap can be customized using a web application called "VIA". This allows for easy and portable customization of the A+'s buttons.
+
+Currently, a bit of additional work is necessary to get VIA to work, but it should only take about thirty seconds.
+
+Begin by copying and pasting the following into a text file, saving it as *aplus.json*:
+
+    {
+      "name": "Ploopy A+ Trackball",
+      "vendorId": "0x5043",
+      "productId": "0x81DB",
+      "matrix": {
+        "rows": 1,
+        "cols": 8
+      },
+      "customKeycodes": [
+        {
+          "name": "DPI Config",
+          "title": "DPI Config",
+          "shortName": "DPI"
+        },
+        {
+          "name": "Drag Scroll",
+          "title": "Drag Scroll",
+          "shortName": "DragScl"
+        }
+      ],
+      "layouts": {
+        "keymap": [
+          [
+            {
+              "h": 2
+            },
+            "0,1",
+            {
+              "x": 0.25,
+              "h": 1.25
+            },
+            "0,2",
+            {
+              "x": 0.25,
+              "h": 1.25
+            },
+            "0,3",
+            {
+              "x": 0.25,
+              "h": 2
+            },
+            "0,4"
+          ],
+          [
+            {
+              "y": 1.25,
+              "w": 1.75,
+              "h": 2
+            },
+            "0,0",
+            {
+              "x": 1.25,
+              "w": 1.75,
+              "h": 2
+            },
+            "0,5"
+          ],
+          [
+            {
+              "x": 0.5,
+              "y": 1.25,
+              "w": 1.5,
+              "h": 1.5
+            },
+            "0,7",
+            {
+              "x": 0.75,
+              "w": 1.5,
+              "h": 1.5
+            },
+            "0,6"
+          ]
+        ]
+      }
+    }
+
+- Next, navigate to [the VIA web app](https://usevia.app), using **Microsoft Edge, Chrome, or Opera**. Any other browser that supports WebHID will work, too.
+- Look at the top toolbar of the web application, and click the tab called *DESIGN*.
+- Uncheck *Use V2 definitions (deprecated)*.
+- Click *Load* and upload the *aplus.json* file that you saved on your computer.
+- Plug in the A+ if it wasn't plugged in already.
+- Look at the top toolbar of the web application, and click the tab called *CONFIGURE*.
+- Click *Authorize Device*. A modal window should pop up, and you should see the *Ploopy A+ Trackball* as an option to connect. Do so now.
+
+You should now see a representation of the buttons of the A+ in the web app. You are now free to modify the button's functionality.

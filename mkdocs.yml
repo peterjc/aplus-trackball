@@ -1,0 +1,22 @@
+site_name: Ploopy A+ Trackball
+site_url: https://ploopyco.github.io/aplus-trackball
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.tracking
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - md_in_html
+nav:
+  - 'index.md'
+  - 'assembly-instructions.md'
+  - Appendices:
+    - 'appendices/pcbs.md'
+    - 'appendices/3d-printing.md'
+    - 'appendices/hardware.md'
+    - 'appendices/programming.md'
+    - 'appendices/manual.md'
+    - 'appendices/via.md'
+  - 'license.md'
