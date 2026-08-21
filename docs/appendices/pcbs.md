@@ -31,7 +31,7 @@ Here are the most important configurations you'll need to communicate to the com
 
 If something is missing from here, it's not really important.
 
-At some point, you'll have to upload design files to the production company. Use the [electronics source files](https://github.com/ploopyco/aplus_trackball/tree/main/hardware/electronics) to generate manufacturing files (you'll have to convert them from their native Altium format if you're using some other platform). That should contain everything you need to get the boards made. If the production company rejects this package, however, you'll need to address the issue yourself.
+At some point, you'll have to upload design files to the production company. Use the [electronics source files](https://github.com/ploopyco/aplus-trackball/tree/main/hardware/electronics) to generate manufacturing files (you'll have to convert them from their native Altium format if you're using some other platform). That should contain everything you need to get the boards made. If the production company rejects this package, however, you'll need to address the issue yourself.
 
 
 ### Step 2: Order the electronics components
